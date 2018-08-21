@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/bottomnav_itemhome"
+        android:icon="@drawable/icon_home"
+        android:title="หน้าหลัก"
+        />
+
+    <item
+        android:id="@+id/bottomnav_itemshopping"
+        android:icon="@drawable/icon_shopping"
+        android:title="รถเข็น"
+        />
+
+    <item
+        android:id="@+id/bottomnav_itemuser"
+        android:icon="@drawable/icon_user"
+        android:title="ผู้ใช้"
+        />
+</menu>
