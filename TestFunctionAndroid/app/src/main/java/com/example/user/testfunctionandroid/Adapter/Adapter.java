@@ -1,6 +1,7 @@
 package com.example.user.testfunctionandroid.Adapter;
 
 import android.content.Context;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -9,11 +10,12 @@ import com.example.user.testfunctionandroid.Fragment.HomeFragment;
 import com.example.user.testfunctionandroid.Fragment.ShoppingFragment;
 import com.example.user.testfunctionandroid.Fragment.UserFragment;
 
-public class NewHomeSlideAdapter extends FragmentPagerAdapter {
+public class Adapter extends FragmentPagerAdapter {
 
     private final int pageNumber = 3;
     private Context context;
-    public NewHomeSlideAdapter(FragmentManager fm, Context context) {
+
+    public Adapter(FragmentManager fm,Context context) {
         super(fm);
         this.context = context;
     }
@@ -29,7 +31,6 @@ public class NewHomeSlideAdapter extends FragmentPagerAdapter {
             return new UserFragment();
         }
 
-        //LockableViewPager lockableViewPager = new LockableViewPager(context);
         return null;
     }
 
@@ -38,4 +39,9 @@ public class NewHomeSlideAdapter extends FragmentPagerAdapter {
         return pageNumber;
     }
 
+    @Override
+    public Parcelable saveState()
+    {
+        return null;
+    }
 }

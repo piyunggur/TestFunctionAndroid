@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:id="@+id/fmshopping_edit"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:textColorHint="@color/colorMain"
+        android:textColor="@color/colorMain"
+        android:theme="@style/EdittextBack"
+        />
+
+
+    <TextView
+        android:id="@+id/fmshopping_show"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fmshopping_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:hint="you can edit in EditText"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColorHint="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/fmshopping_bt"
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fmshopping_show"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Add"
+        />
+
+
+</RelativeLayout>
